@@ -140,3 +140,6 @@ rm -rf terraform.tfstate*
 - Create second resource only after first resource is created
   - Defining Explicit Dependency in Terraform using Resource Meta-Argument `depends_on`
 
+## To add user-data
+- Create the user-data sh file
+- user the command to call the user-data: user_data = "${file("init.sh")}"
